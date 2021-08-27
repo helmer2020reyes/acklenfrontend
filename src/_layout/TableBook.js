@@ -15,7 +15,7 @@ export default function MainTable(){
         load();
         console.log("ACTUALIZADO");
         
-    }, [])
+    })
 
     return(
         
@@ -52,6 +52,7 @@ export default function MainTable(){
             <td>{e.dateadded}</td>
             <td>
                 <div className="btn-group">
+                <Link className="btn btn-default" to={`edit/${e.id}`}>Editar</Link>
                     <button className="btn btn-default" onClick={()=>serviceBook.deleteBooks(e.id)}>Eliminar</button>
                 </div>
             </td>
