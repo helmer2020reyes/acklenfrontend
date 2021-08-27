@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './_layout/Header';
+import { BrowserRouter, Route } from 'react-router-dom';
+import MainTable from './_layout/TableBook';
 
 function App() {
   return (
@@ -9,6 +11,14 @@ function App() {
       <Header></Header>
       
       </header>
+      <main>
+        <BrowserRouter>
+        <Route exact path='/'>
+        <MainTable></MainTable>
+        </Route>
+
+        </BrowserRouter>
+      </main>
     </div>
     
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'mdb-ui-kit/css/mdb.min.css';
-import { BrowserRouter,Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 
 
